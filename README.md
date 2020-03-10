@@ -23,8 +23,11 @@ Canny's Edge Detection algorithm utilizes a multistep approach consisting of:
 For ease, the image shall be considered GrayScale, with each pixel having intensity value 0-255.
 When passed through the Canny() function, a matrix is returned which contains edge information - which in this case shall be treated as boolean 0 for non-edge pixels and 1 for pixels containing edge.
 I have utilized two approaches for finding the nearest edge for a given pixel / pointer location.
-   ##### 1.1. Breadth First Search based approach
-   ##### 1.2. Matrix with a predefined tolerance based approach
+* Breadth First Search based approach
+* Matrix with a predefined tolerance based approach
+* Brute-forcing least distance within a predefined tolerance
+
+
 ![Demonstration of grayscale pixel matrix Credits: https://ai.stanford.edu/~syyeung/cvweb/Pictures1/imagematrix.png](https://ai.stanford.edu/~syyeung/cvweb/Pictures1/imagematrix.png)
 
 Matrix containing values corresponding to each pixel's individual intensity.
