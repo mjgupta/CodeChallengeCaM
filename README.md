@@ -27,6 +27,7 @@ I have utilized two approaches for finding the nearest edge for a given pixel / 
 * Matrix with a predefined tolerance based approach
 * Brute-forcing least distance within a predefined tolerance
 
+![Demonstration of the process](https://github.com/mjgupta/CodeChallengeCaM/blob/master/Annotation%202020-03-11%20020848.png)
 
 ![Demonstration of grayscale pixel matrix Credits: https://ai.stanford.edu/~syyeung/cvweb/Pictures1/imagematrix.png](https://ai.stanford.edu/~syyeung/cvweb/Pictures1/imagematrix.png)
 
