@@ -111,33 +111,24 @@ void snap(vector<vector<lli> > v, lli x,lli y)
 				lli distn = abs(i-x)+abs(j-y);
 				
 				if(distn == dist) {
-				ans.push_back(mp(i,j));
+				ans.push_back(make_pair(i,j));
 				v[i][j] = 9;
+				//cout<<i<<" "<<j<<endl;
 				}
-				//cout<<i+1<<" "<<j+1<<endl;
+				
 			}
 			cout<<v[i][j]<<" ";
 		}
 		cout<<endl;
 	}
-
 }
-/*
-bool extFunc(int j, int k)
-{
-	for(int m=0;m<resultantArrayX.size();m++)
-	{
-		if(resultantArrayX[m]==j && resultantArrayY[m]== k) return 1;
-	}
-	return 0;
-}
-*/
 
 int main()
 {
 	vector<vector<lli> > edgeDetectedMatrix; long long int r,a,b;
-	
+	cout<<"Input no of rows of the square matrix"<<endl;
 	cin>>r;
+	cout<<"Input matrix values"<<endl;
 	for(int i=0;i<r;i++)
 	{
 		vector<lli> temp;
@@ -154,25 +145,11 @@ int main()
 	for (;;)
 	{
 	cout<<"Enter coordinates"; cin>>a>>b;
-	/*snapToNearestEdgePartB(edgeDetectedMatrix,a,b);
-	for(int i=0;i<resultantArrayX.size();i++){
-		cout<<resultantArrayX[i]<<","<<resultantArrayY[i]<<endl;
-		for(int j=0;j<r;j++)
-		{
-			for(int k=0;k<r;k++)
-			{
-				if(j==a && k==b) cout<<"#"<<edgeDetectedMatrix[j][k]<<"#";
-				else if(extFunc(j,k)) { cout<<"*"<<edgeDetectedMatrix[j][k]<<"*";}
-				else cout<<" "<<edgeDetectedMatrix[j][k]<<" ";
-				while(!resultantArrayX.empty())
-				{
-					resultantArrayX.pop_back();
-					resultantArrayY.pop_back();
-				}
-			}
-			cout<<endl;
-		}*/
 		snap(edgeDetectedMatrix,a,b);
+		for(int m=0;m<ans.size();m++)
+		{	cout<<"Nearest Coordinates: "<<endl;
+			cout<<ans[m].first<<" "<<ans[m].second<<endl;
+		}
 	}
 }
 
