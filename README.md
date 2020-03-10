@@ -47,7 +47,7 @@ To verify the code/ solution, sample test cases can be generated from [RandomTes
 * Enter the number of rows/columns in the n\*n square matrix
 * Enter the matrix from the generated test cases
 * Enter the coordinate from which nearest border has to be found
-* The nearest points from the selected point shall change its value to 9 and the selecte point changes its vale to 6
+* The nearest points from the selected point shall change its value to 9 and the selecte point changes its value to 6
 
 
 #### 2. Using Tensorflow.js
