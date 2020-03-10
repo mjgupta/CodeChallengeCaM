@@ -40,6 +40,15 @@ Overview of C++ implementation of the matrix with speicified tolerance based nea
 * For a given matrix size, storing the nearest edge point coordinates to the given point in 2 Arrays, if found.
 * Returning the arrays containing required coordinates.
 
+_Solution_ :
+The above problem has been solved in the ExampleNearestEdgeSnap.cpp	file, for which the built executable file can be downloaded and run locally.
+To verify the code/ solution, sample test cases can be generated from [RandomTestCaseGeneratorsite](https://test-case-generator.herokuapp.com/)
+* A threshold value of maximum size of the matrix (analogous to maximum distance from the selected pixel to be searched) has been defined in the .cpp file.
+* Enter the number of rows/columns in the n\*n square matrix
+* Enter the matrix from the generated test cases
+* Enter the coordinate from which nearest border has to be found
+* The nearest points from the selected point shall change its value to 9 and the selecte point changes its vale to 6
+
 
 #### 2. Using Tensorflow.js
 #### 3. Using self implemented techniques based on Canny edge detection
