@@ -56,6 +56,8 @@ To verify the code/ solution, sample test cases can be generated from [RandomTes
 * Enter the coordinate from which nearest border has to be found
 * The nearest points from the selected point shall change its value to 9 and the selecte point changes its value to 6
 
+In the SampleOpenCVImportFile.cpp ,a detected_edges matrix is created, which is an 8-bit output of the detector having non zero values at the edges. (non zero for edges)The detected_edges matrix is then passed through the function in the other c++ file, ExampleNearestEdgeSnap.cpp , which returns the corresponding snapped coordinates of a selected point in the image based on the nearest edge. 
+
 
 #### 2. Using Tensorflow.js
 #### 3. Using self implemented techniques based on Canny edge detection
