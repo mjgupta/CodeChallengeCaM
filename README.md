@@ -25,7 +25,9 @@ When passed through the Canny() function, a matrix is returned which contains ed
 
 #### Python Solution
 Google Colaboratory Python Solution https://colab.research.google.com/drive/1s-e4HdrYJnr7IqgKNpxs-yS3BHSmhE6u
+
 Youtube video for demonstration of same : https://www.youtube.com/watch?v=QNCnEAmUcBk
+
 Image used in the video: https://imgur.com/a/SL6dfsW
 
 ![Demonstration of the process](https://github.com/mjgupta/CodeChallengeCaM/blob/master/Annotation%202020-03-11%20020848.png)
