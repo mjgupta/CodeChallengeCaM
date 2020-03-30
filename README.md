@@ -23,6 +23,11 @@ Canny's Edge Detection algorithm utilizes a multistep approach consisting of:
 For ease, the image shall be considered GrayScale, with each pixel having intensity value 0-255.
 When passed through the Canny() function, a matrix is returned which contains edge information - which in this case shall be treated as boolean 0 for non-edge pixels and 1 for pixels containing edge.
 
+#### Python Solution
+Google Colaboratory Python Solution https://colab.research.google.com/drive/1s-e4HdrYJnr7IqgKNpxs-yS3BHSmhE6u
+Youtube video for demonstration of same : https://www.youtube.com/watch?v=QNCnEAmUcBk
+Image used in the video: https://imgur.com/a/SL6dfsW
+
 ![Demonstration of the process](https://github.com/mjgupta/CodeChallengeCaM/blob/master/Annotation%202020-03-11%20020848.png)
 Step by step breakdown of the process
 
@@ -41,6 +46,7 @@ Matrix containing values corresponding to each pixel's individual intensity.
 
 Demonstration of Canny's edge detection algorithm : The output image is stored as an EdgeMatrix[][] which is passed on to function for finding the nearest edge.
 
+#### C++ Solution (on the repo)
 Overview of C++ implementation of the matrix with speicified tolerance based nearest edge detection
 * Finding if the given coordinate (x,y) lies on an edge i.e. EdgeMatrix[x][y] ==1
 * Increasing the matrix size (size of the matrix remains less than the desired tolerance), with the centre element being the given coordinate, and searching the periphery of the matrix (Thus avoiding visited cells)
